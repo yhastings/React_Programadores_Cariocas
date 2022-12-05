@@ -1,13 +1,13 @@
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
 import './Navbar.css'
 
 
 function Navbar() {
     return (
-
         <>
             <AppBar position="static">
                 <Toolbar variant="dense">
@@ -16,7 +16,6 @@ function Navbar() {
                             BlogPessoal
                         </Typography>
                     </Box>
-
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
@@ -44,7 +43,6 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Box>
-
                 </Toolbar>
             </AppBar>
         </>

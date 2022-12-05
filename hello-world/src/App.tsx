@@ -21,7 +21,6 @@ function App() {
         <Route path='/cadastrousuario' element={<CadastroUsuario />} />
         <Route path='/temas' element={<ListaTema />} />
         <Route path='/postagem' element={<ListaPostagem />} />
-
       </Routes>
       <Footer />
     </Router>
